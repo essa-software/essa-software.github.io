@@ -1,0 +1,85 @@
+---
+---
+
+<style>
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  #projects > * {
+    width: 400px;
+    max-width: 100%;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.05s;
+  }
+  #projects > *:hover {
+    transform: scale(1.02);
+    transition: transform 0.05s;
+  }
+  #projects h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #projects img {
+    height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+</style>
+
+<h1>Welcome to <b>Essa Software</b>!</h1>
+
+<p>We are a group of programmers (currently 2 people) that like reinventing things.</p>
+
+<p>All of our projects are <a href="https://github.com/essa-software">free and open source</a>.</p>
+
+<h2>Our projects</h2>
+
+<div id="projects">
+  {{< project
+      title="ESSA Space App"
+      id="space-app"
+  >}}
+
+  {{< project
+      title="EssaGUI & Utils"
+      id="gui"
+  >}}
+
+  <!-- {{< project
+      title="EssaLang"
+      description="Another memory safe alternative for C++"
+      id="lang"
+      repo="https://github.com/essa-software/EssaLang"
+  >}} -->
+
+  {{< project
+      title="EssaDB"
+      id="db"
+  >}}
+
+  <!-- {{< project
+      title="EssaREST"
+      description="Backend web framework. No, this site doesn't run on it. Yet"
+      id="rest"
+      repo="https://github.com/essa-software/EssaREST"
+  >}} -->
+
+</div>
+
+<h2>Work in progress</h2>
+
+<ul>
+  <li><a href="https://github.com/essa-software/EssaBuild">EssaBuild</a>
+    - An attempt to make a new build system for Essa projects</li>
+  <li><a href="https://github.com/essa-software/EssaCMS">EssaCMS</a>
+    - Simple static site generator / CMS</li>
+  <li><a href="https://github.com/essa-software/EssaLang">EssaLang</a>
+    - Another memory safe alternative for C++</li>
+  <li><a href="https://github.com/essa-software/EssaREST">EssaREST</a>
+    - HTTP implementation and backend web framework</li>
+</ul>
