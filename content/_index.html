@@ -10,11 +10,12 @@
     gap: 2em;
   }
   #projects > * {
-    width: 400px;
+    width: 520px;
     max-width: 100%;
     text-decoration: none;
     color: inherit;
     transition: transform 0.05s;
+    padding: 2rem;
   }
   #projects > *:hover {
     transform: scale(1.02);
@@ -23,11 +24,16 @@
   #projects h3 {
     font-size: 2rem;
     text-align: center;
+    margin: 0.5em 0 0 0;
   }
   #projects img {
     height: 250px;
     max-width: 100%;
     object-fit: contain;
+  }
+  #projects p {
+    margin: 0.8em 0 0;
+    text-align: center;
   }
 </style>
 
@@ -43,11 +49,13 @@
   {{< project
       title="ESSA Space App"
       id="space-app"
+      description="Hopefully accurate space simulator"
   >}}
 
   {{< project
       title="EssaGUI & Utils"
       id="gui"
+      description="Simulation focused GUI framework"
   >}}
 
   <!-- {{< project
@@ -60,6 +68,7 @@
   {{< project
       title="EssaDB"
       id="db"
+      description="Another SQL engine and frontend"
   >}}
 
   <!-- {{< project

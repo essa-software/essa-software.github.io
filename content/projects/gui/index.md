@@ -15,7 +15,7 @@ EssaGUI is a GUI framework focused on [simulations](../space-app/). It is largel
 ## Screenshots
 
 {{<figure
-    src="/gui.png"
+    src="gallery.png"
     caption="Various widgets"
 >}}
 

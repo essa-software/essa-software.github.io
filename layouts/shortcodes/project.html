@@ -1,6 +1,7 @@
 <a href="/projects/{{.Get "id"}}">
-  <h3>{{.Get "title"}}</h3>
   <div style="display:flex;justify-content:center">
-    <img src="{{.Get "id"}}.png" alt="{{.Get "id"}}" height="500">
+    <img src="{{.Get "id"}}.svg" alt="{{.Get "id"}}" height="500">
   </div>
+  <h3>{{.Get "title"}}</h3>
+  <p>{{.Get "description"}}</p>
 </a>
