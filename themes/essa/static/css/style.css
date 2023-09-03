@@ -117,22 +117,27 @@ code:not(.highlight code) {
   padding: 0.6em 1.2em;
   border-radius: 1em;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .cta > a {
   background-color: #454f5c;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s, box-shadow 0.1s;
+  outline-color: transparent;
 }
 .cta > a:hover {
   background-color: #545f6d;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s, box-shadow 0.1s;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.1);
 }
 .cta > strong {
   background-color: #37693b;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s, box-shadow 0.1s;
+  outline-color: transparent;
 }
 .cta > strong:hover {
   background-color: #457a48;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s, box-shadow 0.1s;
+  box-shadow: 0 0 20px 5px rgba(99, 255, 112, 0.1);
 }
 .cta a {
   text-decoration: none;
